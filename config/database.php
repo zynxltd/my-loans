@@ -43,6 +43,10 @@ return [
             'transaction_mode' => 'DEFERRED',
         ],
 
+        'pdo_mysql_ssl_ca_option' => class_exists(\Pdo\Mysql::class)
+            ? \Pdo\Mysql::ATTR_SSL_CA
+            : (defined('PDO::MYSQL_ATTR_SSL_CA') ? PDO::MYSQL_ATTR_SSL_CA : null),
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DB_URL'),
@@ -59,7 +63,9 @@ return [
             'strict' => true,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+                ...((($opt = (static fn () => $connections['pdo_mysql_ssl_ca_option'] ?? null)()) !== null)
+                    ? [$opt => env('MYSQL_ATTR_SSL_CA')]
+                    : []),
             ]) : [],
         ],
 
@@ -79,7 +85,9 @@ return [
             'strict' => true,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+                ...((($opt = (static fn () => $connections['pdo_mysql_ssl_ca_option'] ?? null)()) !== null)
+                    ? [$opt => env('MYSQL_ATTR_SSL_CA')]
+                    : []),
             ]) : [],
         ],
 
