@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Your Loan - myLoans | Quick UK Loan Application</title>
+    <meta name="description" content="Apply for your quick UK loan with myLoans. Simple online application, instant decision, same-day approval available. Get your loan from £500+ today.">
+    <meta name="keywords" content="apply for loan, UK loan application, quick loan, personal loan, instant approval, myLoans">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="myLoans">
+    <meta property="og:title" content="Apply for Your Loan - myLoans | Quick UK Loan Application">
+    <meta property="og:description" content="Apply for your quick UK loan with myLoans. Simple online application, instant decision, same-day approval available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myloans.co.uk/apply">
+    <link rel="canonical" href="https://myloans.co.uk/apply">
+    <meta name="theme-color" content="#20B2AA">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span class="pound-symbol">£</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-my">my</span><span class="logo-loans">Loans</span>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html#how-it-works">How it Works</a>
+                    <a href="index.html#rates">Rates</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="nav-cta">
+                    <button class="btn btn-primary" onclick="window.location.href='index.html'">Get Quote</button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Apply Hero Section -->
+    <section class="apply-hero">
+        <div class="container">
+            <div class="apply-hero-content">
+                <div class="apply-hero-text">
+                    <div class="apply-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Quick Application</span>
+                    </div>
+                    <h1>Apply for Your <span class="highlight">Quick UK Loan</span></h1>
+                    <p class="apply-subtitle">
+                        Get your loan approved in minutes with our simple online application. 
+                        No paperwork, no hassle - just quick, secure, and reliable lending.
+                    </p>
+                    <div class="apply-features">
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Instant decision</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure application</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Same-day approval</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="application-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Application Form</span>
+                </div>
+                <h2>Complete Your Application</h2>
+                <p>Fill out the form below to get your personalized loan quote</p>
+            </div>
+            
+            <div class="application-form-container">
+                <form class="application-form" id="application-form">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date-of-birth">Date of Birth *</label>
+                                <input type="date" id="date-of-birth" name="dateOfBirth" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="postcode">Postcode *</label>
+                                <input type="text" id="postcode" name="postcode" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Loan Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="loan-amount">Loan Amount *</label>
+                                <select id="loan-amount" name="loanAmount" required>
+                                    <option value="">Select amount</option>
+                                    <option value="500-1000">£500 - £1,000</option>
+                                    <option value="1000-2500">£1,000 - £2,500</option>
+                                    <option value="2500-5000">£2,500 - £5,000</option>
+                                    <option value="5000-10000">£5,000 - £10,000</option>
+                                    <option value="10000-25000">£10,000 - £25,000</option>
+                                    <option value="25000+">£25,000+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="loan-purpose">Loan Purpose *</label>
+                                <select id="loan-purpose" name="loanPurpose" required>
+                                    <option value="">Select purpose</option>
+                                    <option value="home-improvement">Home Improvement</option>
+                                    <option value="debt-consolidation">Debt Consolidation</option>
+                                    <option value="car-purchase">Car Purchase</option>
+                                    <option value="holiday">Holiday</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="repayment-period">Repayment Period *</label>
+                                <select id="repayment-period" name="repaymentPeriod" required>
+                                    <option value="">Select period</option>
+                                    <option value="12">12 months</option>
+                                    <option value="24">24 months</option>
+                                    <option value="36">36 months</option>
+                                    <option value="48">48 months</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="employment-status">Employment Status *</label>
+                                <select id="employment-status" name="employmentStatus" required>
+                                    <option value="">Select status</option>
+                                    <option value="employed">Employed</option>
+                                    <option value="self-employed">Self-Employed</option>
+                                    <option value="retired">Retired</option>
+                                    <option value="unemployed">Unemployed</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Financial Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="annual-income">Annual Income *</label>
+                                <select id="annual-income" name="annualIncome" required>
+                                    <option value="">Select income</option>
+                                    <option value="15000-25000">£15,000 - £25,000</option>
+                                    <option value="25000-40000">£25,000 - £40,000</option>
+                                    <option value="40000-60000">£40,000 - £60,000</option>
+                                    <option value="60000+">£60,000+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="monthly-expenses">Monthly Expenses *</label>
+                                <select id="monthly-expenses" name="monthlyExpenses" required>
+                                    <option value="">Select expenses</option>
+                                    <option value="500-1000">£500 - £1,000</option>
+                                    <option value="1000-2000">£1,000 - £2,000</option>
+                                    <option value="2000-3000">£2,000 - £3,000</option>
+                                    <option value="3000+">£3,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Terms & Conditions</h3>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms-conditions" name="termsConditions" required>
+                            <label for="terms-conditions">I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> *</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="marketing-consent" name="marketingConsent">
+                            <label for="marketing-consent">I would like to receive marketing communications from myLoans</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="credit-check" name="creditCheck" required>
+                            <label for="credit-check">I consent to a credit check being performed *</label>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Submit Application
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            Your information is secure and encrypted. We'll contact you within 2 hours with a decision.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <h2>Why Choose myLoans?</h2>
+                <div class="trust-features">
+                    <div class="trust-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>FCA Regulated</h3>
+                        <p>Fully authorized and regulated by the Financial Conduct Authority</p>
+                    </div>
+                    <div class="trust-feature">
+                        <i class="fas fa-lock"></i>
+                        <h3>Secure & Safe</h3>
+                        <p>Bank-level encryption protects your personal information</p>
+                    </div>
+                    <div class="trust-feature">
+                        <i class="fas fa-award"></i>
+                        <h3>5-Star Rated</h3>
+                        <p>Excellent customer service with thousands of happy customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <span class="pound-symbol">£</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-my">my</span><span class="logo-loans">Loans</span>
+                        </div>
+                    </div>
+                    <p>Your trusted partner for quick and reliable UK loans.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#how-it-works">How it Works</a></li>
+                        <li><a href="index.html#rates">Interest Rates</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Loan Products</h4>
+                    <ul>
+                        <li><a href="index.html#loan-types">Personal Loans</a></li>
+                        <li><a href="index.html#loan-types">Quick Loans</a></li>
+                        <li><a href="index.html#loan-types">Business Loans</a></li>
+                        <li><a href="index.html#loan-types">Debt Consolidation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 myLoans. All rights reserved. | FCA Regulated | Company Registration: 12345678</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
